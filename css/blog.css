@@ -1,0 +1,94 @@
+
+.top {
+  position: absolute;
+  height: 320px;
+  width:1296px;
+  font-family: Bitter;
+  font-size: 14pt;
+}
+
+.middle {
+  position: absolute;
+  top: 380px;
+  width:1296px;
+  font-family: Bitter;
+  font-size: 14pt;
+}
+
+.head-left {
+  float: left;
+  width: 20%;
+}
+
+.head-right {
+  float: left;
+  width: 78%;
+  padding: 25px;
+}
+
+
+
+.blog-header-title {
+  line-height: 1;
+  font-weight: 800;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.blog-list {
+  margin-left: 15.0pt;
+}
+
+.blog-list-ul{
+  list-style-type: square; 
+  margin-left: 0; 
+  margin-right: 0; 
+  padding: 0;
+}
+
+* {
+  font-family: "Times New Roman";
+}
+
+p {
+  margin-bottom: 0.2rem;
+}
+
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 2rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
