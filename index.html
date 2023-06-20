@@ -12,26 +12,11 @@
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <script src="./js/bootstrap.min.js"></script>
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+  <script src="./js/jquery-3.7.0.min.js"></script>
 
 
   <!-- Custom styles for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">-->
   <!-- Custom styles for this template -->
   <link href="./css/blog.css" rel="stylesheet">
 </head>
@@ -40,7 +25,7 @@
 
   <div class="container">
     <header class="blog-header">
-
+      <div class="logo-title">Hung-Fu Chang, Ph.D.</div>
       <div class="nav-scroller py-1 mb-2">
         <ul class="nav justify-content-end nav-pills" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -76,17 +61,14 @@
             <div class="head-right">
               <h1 class="display-4">Hung-Fu Chang, Ph.D.</h1>
               <p style="line-height: 1.2; padding-bottom: 5px;">
-                <a href="https://uindy.edu/cas/engineering/faculty"
-                  target="_blank" style="color: inherit; text-decoration: none;"><span class="C9DxTc aw5Odc "
-                    style="text-decoration: underline;">Assistant Professor, </span></a>
-                <a href="https://uindy.edu/cas/engineering/" target="_blank"
-                  style="color: inherit; text-decoration: none;"><span style="text-decoration: underline;">R. B. Annis School of Engineering, </span></a><a class="XqQF9c" href="https://uindy.edu/" target="_blank"
+                <a href="https://uindy.edu/cas/engineering/faculty" target="_blank" style="color: inherit; text-decoration: none;"><span style="text-decoration: underline;">Assistant Professor, </span></a>
+                <a href="https://uindy.edu/cas/engineering/" target="_blank" style="color: inherit; text-decoration: none;"><span style="text-decoration: underline;">R. B. Annis School of Engineering, </span></a><a class="XqQF9c" href="https://uindy.edu/" target="_blank"
                   style="color: inherit; text-decoration: none;"><span style="text-decoration: underline;">University of Indianapolis</span></a></p>
               <p style="font-size:14pt;line-height: 1.2;"><b>Education</b></p>
-              <p style="line-height: 1.2;">Ph.D., Computer Science, University of Southern California</p>
-              <p style="line-height: 1.2;">M.S., Computer Aided Engineering, Carnegie Mellon University</p>
-              <p style="line-height: 1.2;">B.S. & M.S., Civil Engineering, National Taiwan University</p>
-              <p style="line-height: 1.2;">Google Scholar Profile</p>
+              <p style="line-height: 1.2;">Ph.D., <a href="https://www.cs.usc.edu"  target="_blank" style="color: inherit; text-decoration: none;">Computer Science</a>, <a href="https://www.usc.edu"  target="_blank" style="color: inherit; text-decoration: none;">University of Southern California</a></p>
+              <p style="line-height: 1.2;">M.S., <a href="https://www.cmu.edu"  target="_blank" style="color: inherit; text-decoration: none;">Computer Aided Engineering</a>,  <a href="https://www.cmu.edu"  target="_blank" style="color: inherit; text-decoration: none;">Carnegie Mellon University</a></p>
+              <p style="line-height: 1.2;">M.S., <a href="https://www.ce.ntu.edu.tw/en/programs/graduate-programs/research-fields/#1553150073664-d5bff9cd-cde6"  target="_blank" style="color: inherit; text-decoration: none;">(Structure Mechanics) Civil Engineering</a>, <a href="https://www.ntu.edu.tw"  target="_blank" style="color: inherit; text-decoration: none;">National Taiwan University</a></p>
+              <p style="line-height: 1.2;">B.S., <a href="https://www.ce.ntu.edu.tw/en/home/"  target="_blank" style="color: inherit; text-decoration: none;">Civil Engineering</a>, <a href="https://www.ntu.edu.tw"  target="_blank" style="color: inherit; text-decoration: none;">National Taiwan University</a></p>
             </div>
           </div>
           <div class="middle">
@@ -136,78 +118,23 @@
 
         </main>
       </div>
-
       <div class="tab-pane fade" id="pills-research" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class="blog-post">
-          <p class="blog-header-title"">Project</p>
-          <ul class="blog-list-ul">
-            <li class="blog-list">
-              <p><span>Visualization of Real-time Structural Movements</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>Virtual
-                  Reality, Augmented Reality, and Metaverse in Science and Engineering Courses</span></p>
-            </li>
-              <li class="blog-list">
-                <p><span>Software Automation&nbsp;</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>Intelligent Internet of Things (IOT) Systems</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>Natural Language Processing in Software Design</span></p>
-            </li>
-            </ul>
-          </div>
+        <div id="research-page-content"></div>
       </div>
-
-
-
       <div class="tab-pane fade" id="pills-teaching" role="tabpanel" aria-labelledby="pills-contact-tab">
-
-        <div class="blog-post">
-          <p class="blog-header-title"">Teaching</p>
-          <ul class="blog-list-ul">
-            <li class="blog-list">
-              <p><span>University of Indianapolis: SWEN400 Software Project Management</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>University of Indianapolis: SWEN330 Software Architecture </span></p>
-            </li>
-              <li class="blog-list">
-                <p><span>University of Indianapolis: SWEN320 Software Validation and Testing</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>University of Indianapolis: CSCI155 Introduction to Programming Language</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>University of Indianapolis: CSCI400-SP Applications in Natural Language Processing</span></p>
-            </li>
-            <li class="blog-list">
-              <p><span>University of Indianapolis: CSCI156 Introduction to Object-Oriented Programming </span></p>
-            </li>
-            </ul>
-          </div>
-
-
+        <div id="teaching-page-content"></div>
       </div>
-
-
-
       <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-contact-tab">
-
-        <div class="blog-post">
-          <p class="blog-header-title"">Service</p>
-          <ul class="blog-list-ul">
-            <li class="blog-list">
-              <p><span>University of Indianapolis: SWEN400 Software Project Management</span></p>
-            </li>
-            </ul>
-          </div>
-
-
+        <div id="service-page-content"></div>
       </div>
+
     </div>
+
+    <script>
+      $( "#research-page-content" ).load( "./research.html" );
+      $( "#teaching-page-content" ).load( "./teaching.html" );
+      $( "#service-page-content" ).load( "./service.html" );
+    </script>
 
 
 </body>
