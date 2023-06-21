@@ -1,3 +1,11 @@
+div {
+  font-size: 14pt;
+}
+
+p {
+  font-size: 14pt;
+}
+
 .logo-title {
   position: absolute;
   top: 0px;
@@ -6,19 +14,6 @@
   z-index: 1;
 }
 
-iframe {
-  width:100%;
-  padding:10px;
-  height: 100%;
-}
-
-.top {
-  position: absolute;
-  height: 320px;
-  width:1296px;
-  font-family: Bitter;
-  font-size: 14pt;
-}
 
 .middle {
   position: absolute;
@@ -44,6 +39,13 @@ iframe {
 .blog-header-title {
   line-height: 1;
   font-weight: 800;
+  font-size: 18pt;
+  margin-bottom: 0.4rem;
+}
+
+
+.blog-header-subtitle {
+  font-size: 16pt;
 }
 
 .blog-header-logo {
@@ -105,3 +107,22 @@ p {
   color: #727272;
 }
 
+figure {
+  float: left;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.75em;
+}
+
+.blog-section {
+  position: relative;
+  display:inline-block;
+  padding:10px;
+  width: 100%;
+  height: 100%;
+
+}
