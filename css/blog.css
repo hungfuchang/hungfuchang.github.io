@@ -18,6 +18,7 @@ p {
 .middle {
   position: absolute;
   top: 380px;
+  width: 870px;
   font-family: Bitter;
   font-size: 14pt;
 }
